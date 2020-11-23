@@ -4,7 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "npm run start",
+    "start": "npx babel src/main.js --out-file main.min.js --watch --minified"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/rpennacchio/ns-util/issues"
   },
-  "homepage": "https://github.com/rpennacchio/ns-util#readme"
+  "homepage": "https://github.com/rpennacchio/ns-util#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.7",
+    "@babel/core": "^7.12.7",
+    "@babel/preset-env": "^7.12.7"
+  }
 }
