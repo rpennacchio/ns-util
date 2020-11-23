@@ -1,7 +1,6 @@
 ## Folders
 .idea             # JetBrains
 .sass-cache       # Sass
-node_modules/     # NPM
 node_modules      # NPM
 .no-commit
 builds
@@ -17,4 +16,3 @@ desktop.ini       # Windows
 *.7z              # 7-Zip
 *.save.*
 *.old.*
-*.min.*
